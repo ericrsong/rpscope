@@ -1,0 +1,82 @@
+1. Introduction
+2. Hardware
+    2.1 Architecture
+        2.1.1 Overall
+        2.2.2 Detailed
+    2.2 Schematic
+        2.2.1 Power Supply
+            2.2.1.1 Digital
+            2.2.1.2 Analog
+            2.2.1.3 GNDs joint point
+        2.2.2 Main components
+            2.2.2.1 CPU
+            2.2.2.2 ADC
+            2.2.2.3 TFT
+            2.2.2.4 IO_EXP
+            2.2.2.5 TSC
+        2.2.3 Analog front end
+            2.2.3.1 Architecture
+            2.2.3.2 Coupling selector
+            2.2.3.3 Input divisor
+            2.2.3.4 Buffer
+            2.2.3.5 Amplifier
+            2.2.3.6 Offset
+            2.2.3.7 Clamping diodes
+            2.2.3.8 Pull-down resistors
+            2.2.3.9 Time and Freq simulations
+        2.2.4 Analog miscellaneous
+            2.2.4.1 Voltage reference
+            2.2.4.2 Channel multiplexer
+            2.2.4.3 Trigger
+            2.2.4.4 Offset selector
+    2.3 PCB
+        2.3.1 Comonent placing
+        2.3.2 Power planes
+            2.3.2.1 5 and 3V3 and +-3V3A distribution
+            2.3.2.2 GND distribution
+            2.3.2.3 GND joint point
+        2.3.3 3V3 layout
+        2.3.4 ADC layout
+        2.3.5 CHx layout
+        2.3.6 Top&Bot layers review
+3. Software
+    3.1 Introduction
+    3.2 HAL
+        3.2.1 DAC
+        3.2.2 IOEXP
+        3.2.3 TFT
+            3.2.3.1 SPI interface
+            3.2.3.2 DMA
+            3.2.3.3 draw_bitmap()
+        3.2.4 ADC
+            3.2.4.1 ADC08100 interface
+            3.2.4.2 PIO
+            3.2.4.3 DMA
+        3.2.5 TSC
+            3.2.5.1 SPI intergace
+            3.2.5.2 Averaging
+            3.2.5.3 Calibration
+        3.2.6 Trigger
+            3.2.6.1 PIO
+            3.2.6.2 Circular buffer
+            3.2.6.3 Timer
+        3.2.7 DMA
+            3.2.7.1 configuration
+            3.2.7.2 operation
+            3.2.7.3 config >> enable >> while( is_busy )
+    3.3 GUI
+        3.3.1 Display driver
+            3.3.1.1 disp_draw_buf_t
+            3.3.1.2 dis_drv_t
+            3.3.1.3 indev_drv_t
+        3.3.2 Dear LVGL
+            3.3.2.1 Containers
+            3.3.2.2 FLEX_FLOW
+            3.3.2.3 Adding elements
+    3.4 Scope
+        3.4.1 scope.build_ui
+        3.4.2 scope.capture
+            3.4.2.1 configure ADC and Trigger
+            3.4.2.2 How Trigger controls the ADC DMA
+            3.4.2.3 Before trigger
+            3.4.2.4 After trigger

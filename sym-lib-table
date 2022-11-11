@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name rpicoscope)(type Legacy)(uri ${KIPRJMOD}/rpicoscope.lib)(options "")(descr ""))
+  (lib (name RPi_Pico)(type Legacy)(uri C:/Users/Jose/Desktop/rpicoscope2/RPi_Pico.lib)(options "")(descr ""))
+)

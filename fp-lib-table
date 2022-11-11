@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name RPi_Pico)(type KiCad)(uri C:/Users/Jose/Desktop/rpicoscope2/RPi_Pico.pretty)(options "")(descr ""))
+)
